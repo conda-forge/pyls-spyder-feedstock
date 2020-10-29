@@ -1,5 +1,5 @@
 {% set name = "pyls-spyder" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2cd86848000740dcb2653b1c6285ed8e5641154f2fe2eb3104660c221d16fa3c
+  sha256: 935bcf4cacfbdf2c5ac6442d8cc2a5056571e755f913b594d2a69c3b0181ce27
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Spyder extensions for the python-language-server'
+  summary: Spyder extensions for the python-language-server
 
   description: |
     Spyder extensions for the python-language-server.
