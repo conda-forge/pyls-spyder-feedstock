@@ -1,5 +1,5 @@
 {% set name = "pyls-spyder" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 935bcf4cacfbdf2c5ac6442d8cc2a5056571e755f913b594d2a69c3b0181ce27
+  sha256: c5500b7b014ad4f1a3bfcd2e78a3f1160ab33622e103bdc4c775e4970478eb27
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.6
     - python-language-server
 
 test:
