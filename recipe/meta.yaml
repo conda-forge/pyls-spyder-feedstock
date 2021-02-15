@@ -1,5 +1,5 @@
 {% set name = "pyls-spyder" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 419ffbb3c2113664858f05eec3ffe3e595b7267af7e41f4b9fcba32502ec571d
+  sha256: ae647ff0e82bf49a5b370f9cb22d6b9a7b6a5ca9384bcf6630c0181add7f5b58
 
 build:
   noarch: python
